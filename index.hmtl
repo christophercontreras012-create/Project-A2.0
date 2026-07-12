@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Project A connects customers with trusted local professionals."
+  >
+
+  <title>Project A | Trusted Local Professionals</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container">
+
+      <a href="index.html" class="logo">
+        Project<span>A</span>
+      </a>
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+
+        <a href="index.html" class="nav-link active">
+          Home
+        </a>
+
+        <a href="#categories" class="nav-link">
+          Categories
+        </a>
+
+        <a href="#professionals" class="nav-link">
+          Professionals
+        </a>
+
+        <a href="about.html" class="nav-link">
+          About
+        </a>
+
+        <button class="theme-toggle" id="themeToggle">
+          <span id="themeIcon">🌙</span>
+          <span id="themeText">Dark mode</span>
+        </button>
+
+        <button class="nav-login-button" id="loginButton">
+          Log in
+        </button>
+
+        <button class="nav-signup-button" id="signupButton">
+          Join Project A
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <span class="hero-badge">
+            Trusted professionals near you
+          </span>
+
+          <h1>
+            Find trusted local professionals for any job.
+          </h1>
+
+          <p class="hero-description">
+            Connect with verified cleaners, installers, handymen,
+            landscapers, photographers, and other local professionals.
+          </p>
+
+          <form class="search-box" id="searchForm">
+
+            <div class="search-field">
+              <label for="serviceSearch">
+                What service do you need?
+              </label>
+
+              <input
+                type="text"
+                id="serviceSearch"
+                placeholder="Cleaning, plumbing, drapery..."
+                autocomplete="off"
+              >
+            </div>
+
+            <div class="search-field">
+              <label for="locationSearch">
+                Location
+              </label>
+
+              <input
+                type="text"
+                id="locationSearch"
+                placeholder="Atlanta, GA"
+                autocomplete="off"
+              >
+            </div>
+
+            <button type="submit" class="primary-button search-button">
+              Search professionals
+            </button>
+
+          </form>
+
+          <div class="hero-trust-row">
+
+            <div class="trust-item">
+              <strong>Verified</strong>
+              <span>Identity badges</span>
+            </div>
+
+            <div class="trust-item">
+              <strong>Local</strong>
+              <span>Community professionals</span>
+            </div>
+
+            <div class="trust-item">
+              <strong>Direct</strong>
+              <span>Private messaging</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="hero-card-header">
+            <div>
+              <span class="availability-dot"></span>
+              Available near Atlanta
+            </div>
+
+            <span class="rating">
+              ★ 4.9
+            </span>
+          </div>
+
+          <div class="profile-placeholder">
+            AP
+          </div>
+
+          <div class="hero-card-content">
+
+            <div class="profile-name-row">
+              <div>
+                <h2>Alex Professional</h2>
+                <p>Home Services Specialist</p>
+              </div>
+
+              <span
+                class="verified-check"
+                title="Identity verified"
+              >
+                ✓
+              </span>
+            </div>
+
+            <div class="badge-row">
+              <span class="trust-badge verified">
+                ✓ ID Verified
+              </span>
+
+              <span class="trust-badge background">
+                🛡 Background Checked
+              </span>
+
+              <span class="trust-badge experienced">
+                ★ Experienced Pro
+              </span>
+            </div>
+
+            <div class="profile-stats">
+
+              <div>
+                <strong>127</strong>
+                <span>Jobs completed</span>
+              </div>
+
+              <div>
+                <strong>4.9</strong>
+                <span>Customer rating</span>
+              </div>
+
+              <div>
+                <strong>5 yrs</strong>
+                <span>Experience</span>
+              </div>
+
+            </div>
+
+            <button class="primary-button full-width-button">
+              View professional
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">
+              Explore services
+            </span>
+
+            <h2>
+              Popular categories
+            </h2>
+
+            <p>
+              Find experienced local professionals for jobs of every size.
+            </p>
+          </div>
+
+          <button class="text-button" id="viewAllCategories">
+            View all categories →
+          </button>
+        </div>
+
+
+        <div class="category-grid">
+
+          <button
+            class="category-card"
+            data-category="Cleaning"
+          >
+            <span class="category-icon">🧼</span>
+            <span class="category-name">Cleaning</span>
+            <span class="category-description">
+              Homes, offices and deep cleaning
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Handyman"
+          >
+            <span class="category-icon">🛠️</span>
+            <span class="category-name">Handyman</span>
+            <span class="category-description">
+              Repairs, mounting and assembly
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Drapery Installation"
+          >
+            <span class="category-icon">🪟</span>
+            <span class="category-name">
+              Drapery Installation
+            </span>
+            <span class="category-description">
+              Rods, curtains and motorized shades
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Lawn Care"
+          >
+            <span class="category-icon">🌿</span>
+            <span class="category-name">Lawn Care</span>
+            <span class="category-description">
+              Mowing, landscaping and cleanup
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Pressure Washing"
+          >
+            <span class="category-icon">💦</span>
+            <span class="category-name">
+              Pressure Washing
+            </span>
+            <span class="category-description">
+              Driveways, patios and home exteriors
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Photography"
+          >
+            <span class="category-icon">📸</span>
+            <span class="category-name">Photography</span>
+            <span class="category-description">
+              Events, portraits and businesses
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Moving"
+          >
+            <span class="category-icon">📦</span>
+            <span class="category-name">Moving</span>
+            <span class="category-description">
+              Local moving and furniture help
+            </span>
+          </button>
+
+          <button
+            class="category-card"
+            data-category="Bartending"
+          >
+            <span class="category-icon">🍸</span>
+            <span class="category-name">Bartending</span>
+            <span class="category-description">
+              Private events and celebrations
+            </span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Professionals -->
+    <section
+      class="section professionals-section"
+      id="professionals"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">
+              Local talent
+            </span>
+
+            <h2>
+              Featured professionals
+            </h2>
+
+            <p>
+              Browse sample profiles from professionals in your area.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="professional-grid" id="professionalGrid">
+
+          <article
+            class="professional-card"
+            data-service="Cleaning"
+          >
+
+            <div class="professional-card-top">
+              <div class="professional-avatar">
+                MC
+              </div>
+
+              <button
+                class="favorite-button"
+                aria-label="Save professional"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="professional-card-body">
+
+              <div class="professional-title-row">
+                <div>
+                  <h3>Maria's Premier Cleaning</h3>
+                  <p>Residential Cleaner</p>
+                </div>
+
+                <span class="verified-check">
+                  ✓
+                </span>
+              </div>
+
+              <div class="rating-line">
+                <span>★ 4.9</span>
+                <span>•</span>
+                <span>82 reviews</span>
+              </div>
+
+              <div class="badge-row">
+                <span class="trust-badge verified">
+                  ✓ ID Verified
+                </span>
+
+                <span class="trust-badge experienced">
+                  ★ Top Rated
+                </span>
+              </div>
+
+              <p class="professional-description">
+                Detailed home cleaning with flexible scheduling
+                and dependable service.
+              </p>
+
+              <div class="professional-footer">
+                <div>
+                  <span>Starting at</span>
+                  <strong>$120</strong>
+                </div>
+
+                <button class="secondary-button">
+                  View profile
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+
+          <article
+            class="professional-card"
+            data-service="Drapery Installation"
+          >
+
+            <div class="professional-card-top">
+              <div class="professional-avatar">
+                CC
+              </div>
+
+              <button
+                class="favorite-button"
+                aria-label="Save professional"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="professional-card-body">
+
+              <div class="professional-title-row">
+                <div>
+                  <h3>Chris Custom Installations</h3>
+                  <p>Window Treatment Installer</p>
+                </div>
+
+                <span class="verified-check">
+                  ✓
+                </span>
+              </div>
+
+              <div class="rating-line">
+                <span>★ 5.0</span>
+                <span>•</span>
+                <span>47 reviews</span>
+              </div>
+
+              <div class="badge-row">
+                <span class="trust-badge verified">
+                  ✓ ID Verified
+                </span>
+
+                <span class="trust-badge background">
+                  🛡 Background Checked
+                </span>
+              </div>
+
+              <p class="professional-description">
+                Professional installation for rods, drapery,
+                shades and motorized window treatments.
+              </p>
+
+              <div class="professional-footer">
+                <div>
+                  <span>Starting at</span>
+                  <strong>$150</strong>
+                </div>
+
+                <button class="secondary-button">
+                  View profile
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+
+          <article
+            class="professional-card"
+            data-service="Pressure Washing"
+          >
+
+            <div class="professional-card-top">
+              <div class="professional-avatar">
+                AP
+              </div>
+
+              <button
+                class="favorite-button"
+                aria-label="Save professional"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="professional-card-body">
+
+              <div class="professional-title-row">
+                <div>
+                  <h3>Atlanta Pro Wash</h3>
+                  <p>Exterior Cleaning Specialist</p>
+                </div>
+
+                <span class="verified-check">
+                  ✓
+                </span>
+              </div>
+
+              <div class="rating-line">
+                <span>★ 4.8</span>
+                <span>•</span>
+                <span>61 reviews</span>
+              </div>
+
+              <div class="badge-row">
+                <span class="trust-badge verified">
+                  ✓ ID Verified
+                </span>
+
+                <span class="trust-badge experienced">
+                  ★ Experienced Pro
+                </span>
+              </div>
+
+              <p class="professional-description">
+                Driveway, patio, fence and exterior washing
+                throughout the Atlanta area.
+              </p>
+
+              <div class="professional-footer">
+                <div>
+                  <span>Starting at</span>
+                  <strong>$99</strong>
+                </div>
+
+                <button class="secondary-button">
+                  View profile
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+        <p class="no-results-message" id="noResultsMessage">
+          No sample professionals matched your search.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- How It Works -->
+    <section class="section how-it-works-section">
+
+      <div class="container">
+
+        <div class="centered-heading">
+          <span class="section-label">
+            Simple and secure
+          </span>
+
+          <h2>
+            How Project A works
+          </h2>
+
+          <p>
+            Find help, compare trusted professionals and communicate
+            without immediately sharing private contact information.
+          </p>
+        </div>
+
+
+        <div class="steps-grid">
+
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <span class="step-icon">🔎</span>
+            <h3>Search for a service</h3>
+            <p>
+              Tell us what you need and where the job is located.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <span class="step-icon">✅</span>
+            <h3>Compare professionals</h3>
+            <p>
+              Review experience, ratings and verification badges.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <span class="step-icon">💬</span>
+            <h3>Message securely</h3>
+            <p>
+              Discuss the job through Project A before sharing details.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Trust Section -->
+    <section class="section trust-section">
+
+      <div class="container trust-grid">
+
+        <div class="trust-content">
+
+          <span class="section-label">
+            Built around trust
+          </span>
+
+          <h2>
+            Know who you are hiring.
+          </h2>
+
+          <p>
+            Project A is designed to help customers understand
+            which verification steps a professional has completed.
+          </p>
+
+          <ul class="trust-list">
+            <li>
+              <span>✓</span>
+              Identity verification status
+            </li>
+
+            <li>
+              <span>✓</span>
+              Optional background-check status
+            </li>
+
+            <li>
+              <span>✓</span>
+              Customer reviews and job history
+            </li>
+
+            <li>
+              <span>✓</span>
+              Private in-app communication
+            </li>
+          </ul>
+
+          <button class="primary-button">
+            Learn about verification
+          </button>
+
+        </div>
+
+
+        <div class="verification-panel">
+
+          <div class="verification-panel-header">
+            <div>
+              <span class="shield-icon">🛡️</span>
+            </div>
+
+            <div>
+              <span>Project A</span>
+              <h3>Verification Center</h3>
+            </div>
+          </div>
+
+          <div class="verification-item completed">
+            <span class="verification-icon">✓</span>
+
+            <div>
+              <strong>Identity verified</strong>
+              <p>Government identification reviewed</p>
+            </div>
+
+            <span class="status-text">
+              Complete
+            </span>
+          </div>
+
+          <div class="verification-item completed">
+            <span class="verification-icon">✓</span>
+
+            <div>
+              <strong>Email verified</strong>
+              <p>Account email successfully confirmed</p>
+            </div>
+
+            <span class="status-text">
+              Complete
+            </span>
+          </div>
+
+          <div class="verification-item">
+            <span class="verification-icon pending">
+              •
+            </span>
+
+            <div>
+              <strong>Background screening</strong>
+              <p>Optional screening provided by a third party</p>
+            </div>
+
+            <span class="status-text pending-text">
+              Optional
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+
+      <div class="container cta-content">
+
+        <div>
+          <span class="cta-label">
+            Grow your local business
+          </span>
+
+          <h2>
+            Are you a skilled professional?
+          </h2>
+
+          <p>
+            Build your profile, show your experience and connect
+            with customers looking for your services.
+          </p>
+        </div>
+
+        <button class="cta-button" id="joinProfessionalButton">
+          Create a professional profile
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          Project<span>A</span>
+        </a>
+
+        <p>
+          Connecting communities with trusted local professionals.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customers</h3>
+        <a href="#categories">Browse services</a>
+        <a href="#professionals">Find professionals</a>
+        <a href="#">Safety</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Professionals</h3>
+        <a href="#">Join Project A</a>
+        <a href="#">Membership</a>
+        <a href="#">Verification</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="about.html">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="currentYear"></span> Project A.
+        All rights reserved.
+      </p>
+
+      <p>
+        Atlanta, Georgia
+      </p>
+    </div>
+
+  </footer>
+
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="loginModalTitle"
+    >
+
+      <button
+        class="modal-close"
+        id="closeLoginModal"
+        aria-label="Close login window"
+      >
+        ×
+      </button>
+
+      <span class="modal-label">
+        Welcome back
+      </span>
+
+      <h2 id="loginModalTitle">
+        Log in to Project A
+      </h2>
+
+      <form id="loginForm">
+
+        <label for="loginEmail">
+          Email
+        </label>
+
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="you@example.com"
+          required
+        >
+
+        <label for="loginPassword">
+          Password
+        </label>
+
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter your password"
+          required
+        >
+
+        <button
+          type="submit"
+          class="primary-button full-width-button"
+        >
+          Log in
+        </button>
+
+      </form>
+
+      <p class="modal-note">
+        This first version is only a visual demo. Real accounts
+        will be connected to a secure database later.
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- Signup Modal -->
+  <div class="modal-overlay" id="signupModal">
+
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="signupModalTitle"
+    >
+
+      <button
+        class="modal-close"
+        id="closeSignupModal"
+        aria-label="Close signup window"
+      >
+        ×
+      </button>
+
+      <span class="modal-label">
+        Get started
+      </span>
+
+      <h2 id="signupModalTitle">
+        Join Project A
+      </h2>
+
+      <p>
+        Choose how you plan to use Project A.
+      </p>
+
+      <div class="account-choice-grid">
+
+        <button
+          class="account-choice"
+          data-account-type="customer"
+        >
+          <span>🏠</span>
+          <strong>I need a professional</strong>
+          <small>Create a customer account</small>
+        </button>
+
+        <button
+          class="account-choice"
+          data-account-type="professional"
+        >
+          <span>🛠️</span>
+          <strong>I provide services</strong>
+          <small>Create a professional profile</small>
+        </button>
+
+      </div>
+
+      <p class="modal-note">
+        Account registration will be connected to a secure
+        backend in a later version.
+      </p>
+
+    </div>
+  </div>
+
+
+  <div class="toast" id="toast" role="status">
+    <span id="toastMessage">
+      Action completed
+    </span>
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>
